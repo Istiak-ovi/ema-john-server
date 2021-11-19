@@ -10,6 +10,10 @@ app.use(bodyParser.json());
 app.use(cors());
 const port = 5000
 
+app.get('/', (req, res) => {
+    res.send('Working DB properly')
+})
+
 // console.log(process.env.DB_USER)
 
 
